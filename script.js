@@ -1,5 +1,5 @@
-const btn = document.getElementById("geojson_file");
+const btn = document.getElementById("acorn");
 
 btn.addEventListener("click", () => {
-    window.location.href = "map.geojson"
+    window.open("https://acorn.utoronto.ca", "_blank");
 });
