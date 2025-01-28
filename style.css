@@ -1,29 +1,63 @@
 h1 {
+    background-color: azure;
     color: #D2691E;
     text-align: center;
     font-family: calibri;
     font-size: 225%;
   }
 h3 {
-		color: #FF7F50;
+	color: #FF7F50;
     text-align: center;
-    font-family: calibri
+    font-family: calibri;
     font-size: 150%;
   }
+body {
+    background-color: lightblue;
+    text-align: center;
+}
 p {
-		background-color: #FFF8DC;
+    text-align: center;
+	background-color: #efc10b;
     font-family: calibri;
-    font-size: 80%; 
+    font-size: 110%; 
   }
 p1 { 
-		background-color: #6495ED;
+    text-align: center;
+	background-color: #efc10b;
     font-family: calibri;
-    font-size: 80%;
+    font-size: 110%;
   }
-ACORN.btn { 
-		background-color: #D2691E;
+.button { 
+	background-color: #D2691E;
     font-size: 16px;
     border-radius: 12px;
     width: 250px;
+    text-align: center;
 	}
-		
+.b1 {
+    color : white; 
+}
+.b2 {
+    color: white;
+}
+div {
+    text-align: center;
+    word-wrap: break-word;
+    width: 1250px;
+ }	
+.d1 {
+    word-wrap: break-word;
+    width: 400px;
+}	
+.d2 {
+    word-wrap: break-word;
+    width: 400px;
+}
+.d3 {
+    word-wrap: break-word;
+    width: 400px;
+}
+.d4 {
+    word-wrap: break-word;
+    width: 400px;
+}
