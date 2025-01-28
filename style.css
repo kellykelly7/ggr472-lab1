@@ -1,7 +1,7 @@
 nav {
     background-color: peachpuff;
 }
-h1 {
+header {
     background-color: azure;
     color: #D2691E;
     text-align: center;
@@ -12,13 +12,13 @@ h2 {
     color: darkorange;
     text-align: center;
     font-family: calibri;
-    font-size: 175%;
+    font-size: 150%;
 }
 h3 {
 	color: #FF7F50;
     text-align: center;
     font-family: calibri;
-    font-size: 150%;
+    font-size: 200%;
 }
 body {
     background-color: lightblue;
@@ -85,22 +85,16 @@ p1 {
     width: 250px;
     background-color: #D2691E;
     color: white;
+    float: center;
 }
 .b7 {
     border-radius: 12px;
     width: 250px;
     background-color: #D2691E;
     color: white;
+    vertical-align: middle;
 }
-.d1 {
+section {
+    background-color: bisque;
     text-align: center;
-}
-.d2 {
-    text-align: left;
-}
-.d3 {
-    text-align: right;
-}
-img {
-    max-width: 100%;
 }
