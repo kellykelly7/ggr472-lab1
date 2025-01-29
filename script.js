@@ -1,20 +1,18 @@
 const btn = document.getElementById("sidsmith_commons");
-
-btn.addEventListener("click", () => {
-    window.open("https://sidneysmithcommons.artsci.utoronto.ca/", "_blank");
-});
-
 const bttn = document.getElementById("places_to_eat");
-
-bttn.addEventListener("click", () => {
-    window.open("map.geojson", "_blank");
-});
-
 const acorn = document.getElementById("acorn");
 const quercus = document.getElementById("quercus");
 const artsci_cal = document.getElementById("artsci_calendar");
 const ttb = document.getElementById("timetable_builder");
 const utl = document.getElementById("utlibraries");
+
+btn.addEventListener("click", () => {
+    window.open("https://sidneysmithcommons.artsci.utoronto.ca/", "_blank");
+});
+
+bttn.addEventListener("click", () => {
+    window.open("map.geojson", "_blank");
+});
 
 acorn.addEventListener("click", () => {
     window.open("https://acorn.utoronto.ca/", "_blank");
