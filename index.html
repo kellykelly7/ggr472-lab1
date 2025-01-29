@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+<!--head contains the back end data of the html webpage, from character set to device width, and is where we link external pages like style.css and bootstrap; also contains the webpage name (that appears on a tab)-->    
 <head>
+    <!--character set UTF-8 has all the characters in the english alphabet, in addition to others like numbers, special symbols, chinese characters, and arabic characters-->
     <meta charset="UTF-8">
+    <!--initializes the size of our content page-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+    <!--link to bootstrap for more styling of tags-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--link to style.css for styling of tags-->
+	<link rel="stylesheet" href="style.css">
+    <!--title that appears in tab bar when the webpage is opened-->
     <title>GGR472: Developing Web Maps - Lab 1</title>
 </head>
 
-<body style = "background-color: powderblue;">
-    <header><b>GGR472: Developing Web Maps - Lab 1</b></header>
-    <nav>
-        <h2>Quick Links</h2>
-        <button id = "acorn" class = "button b1">ACORN</button>
-        <button id = "quercus" class = "button b2">Quercus</button>
-        <button id = "artsci_calendar" class = "button b3"> ArtSci Calendar</button>
-        <button id = "timetable_builder" class = "button b4">Timetable Builder</button>
-        <button id = "utlibraries" class = "button b5">University of Toronto Libraries</button>
-    </nav>
-    <header><h3>New to the University of Toronto?</h3></header>
+<!--body is the front end/visible part of the webpage that can be stylized using css page and bootstrap that were linked in the <head> tag-->
+<!--style was added to the body to give it an overarching background colour-->
+<body>
+    <!--header is a semantic element to define an introductory segment of the html webpage or section-->
+    <header>
+        <!--h1 is a heading type, and is the biggest one (size shrinks from h1 to h6)-->
+        <!--<b> is used to bold the words in h1-->
+        <h1><b>GGR472: Developing Web Maps - Lab 1</b></h1>
+        <!--nav defines a set of navigation links-->
+        <nav>
+            <!--h2 is another heading type that is smaller than h1-->
+            <h2>Quick Links</h2>
+            <!--list of buttons for links to other uoft sites-->
+            <button id = "acorn" class = "button b1">ACORN</button>
+            <button id = "quercus" class = "button b2">Quercus</button>
+            <button id = "artsci_calendar" class = "button b3"> ArtSci Calendar</button>
+            <button id = "timetable_builder" class = "button b4">Timetable Builder</button>
+            <button id = "utlibraries" class = "button b5">University of Toronto Libraries</button>
+        </nav>
+    </header>
+    <!--another heading size smaller than h1 and h2-->
+    <h3><b>New to the University of Toronto?</b></h3>
+    <!--section is another semantic element for defining a portion of the html webpage-->
+    <!--class refers to bootstrap so that the section shrinks and resizes according to screen size-->
+    <!--container is not fluid, so there is a noticeable margin on the left and right side of the section as it is boxed in-->
+    <!--the margin-top serves a purely artistic purpose-->
     <section class = "container-sm" style="margin-top: 25px;">
+        <!--<p> is just for a paragraph of text-->
         <p>Head on over to the Sidney Smith Commons (in-person or online) for additional resources specially curated for a greater student experience. The website offers a chat function as well as a FAQ page for your burning questions. </p>
+        <!--another button-->
         <button id = "sidsmith_commons" class = "button b6">Sidney Smith Commons</button> 
+        <!--page break-->
         <br>
         <br>
         <p> As university students, we spend large amounts of time on campus, whether it is studying or going to lectures, attending tutorials or practicals, so I thought I would compile a little list of my favourite places to seek sustenance to get me through those tough days on campus. </p>
-        <button id = "places_to_eat" class = "button b7" style = "margin-bottom: 25px;">Places to eat</button>
+        <button id = "places_to_eat" class = "button b7" style = "margin-bottom: 25px;">Places to eat (GeoJSON file)</button>
         <br>
     </section>
+    <!--div divides the page (which is what I was using before adding bootstrap) into segments-->
     <div style="text-align: center;">
         <br>
+        <!--links an image to the webpage and makes it visible-->
         <img src = "https://www.artsci.utoronto.ca/sites/default/files/UofT4930_20130730_Sidney-Smith-Hall_001.jpg" alt="Sidney Smith Hall, University of Toronto - St. George"> 
     </div>
     <br>
+    <!--little endnote that doesn't quite fit in the actual section/bulk of the page, so small footer added for additional details-->
     <footer>This website was made for educational purposes only. Image sourced from the Faculty of Arts and Science of the University of Toronto.</footer>
+    <!--link to javascript page with event listeners for buttons-->
     <script src = "script.js"></script>     
 </body>
 

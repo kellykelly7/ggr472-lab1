@@ -1,18 +1,25 @@
+/*tag that we are adding style attributes to*/
 nav {
+    /*adds background color to the mentioned segment of the page*/
     background-color: peachpuff;
+    /*adds x number of pixel to the bottom of the cell margin*/
     margin-bottom: 25px;
 }
-header {
+h1 {
+    /*changes the colour of the text in this tag*/
     color: #D2691E;
+    /*changes the alignment of the text in this tag*/
     text-align: center;
+    /*sets the font family of the text in this tag*/
     font-family: monospace;
-    font-size: 225%;
+    /*sets the font size of the text in this tag (can be done with px or %)*/
+    font-size: 300%;
   }
 h2 {
-    color: darkorange;
+    color: royalblue;
     text-align: center;
     font-family: monospace;
-    font-size: 150%;
+    font-size: 250%;
 }
 h3 {
 	color: #FF7F50;
@@ -21,7 +28,7 @@ h3 {
     font-size: 200%;
 }
 body {
-    background-color: blue;
+    background-color: powderblue;
     text-align: center;
 }
 p {
@@ -30,49 +37,58 @@ p {
     font-family: monospace;
     font-size: 110%; 
   }
-.button { 
+button { 
+    /*sets the font size of the text in all buttons with the class attribute of button*/
     font-size: 16px;
+    /*sets the alignment of the text in all buttons with the class attribute of button*/
     text-align: center;
 	}
+/*sub class that we are adding additional styling elements to unique to the button with this sub class*/
 .b1 {
+    /*sets the colour of the button*/
     background-color: navy;
+    /*sets the colour of the text in the button*/
     color : white; 
+    /*makes the button hover in the middle until more buttons are added to the same row -- the buttons are still centered*/
     float: center;
-    border-radius: 4px;
-    width: 225px;
-    padding: 12px 28px;
+    /*rounds the corners of the edges of the button depending on magnitude of px*/
+    border-radius: 8px;
+    /*width of the button horizontally*/
+    width: 150px;
+    /*used to generate space around the text in the button*/
+    padding: 10px 24px;
 }
 .b2 {
     background-color: white;
     color: navy;
     float: center;
-    border-radius: 4px;
-    width: 225px;
-    padding: 12px 28px;
+    border-radius: 8px;
+    width: 150px;
+    padding: 10px 24px;
 }
 .b3 {
     background-color: navy;
     color : white; 
     float: center;
-    border-radius: 4px;
-    width: 225px;
-    padding: 12px 28px;
+    border-radius: 8px;
+    width: 220px;
+    padding: 10px 24px;
 }
 .b4 {
     background-color: white;
     color: navy;
     float: center;
-    border-radius: 4px;
-    width: 225px;
-    padding: 12px 28px;
+    border-radius: 8px;
+    width: 220px;
+    padding: 10px 24px;
 }
 .b5 {
     background-color: navy;
     color : white;
     float: center;
-    border-radius: 4px;
-    width: 300px;
-    padding: 12px 28px;
+    border-radius: 8px;
+    width: 325px;
+    padding: 10px 24px;
 }
 .b6 {
     border-radius: 12px;
@@ -93,8 +109,11 @@ section {
     text-align: center;
 }
 img {
+    /*max-width sets it so that the image won't expand when the webpage is opened on a bigger screen*/
     max-width: 100%;
+    /*set height to auto so that it will calibrate the size of the image based on the screen size*/
     height: auto;
+    /*round the edges of the image based on magnitude of px*/
     border-radius: 8px;
 }
 footer {
