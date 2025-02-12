@@ -36,3 +36,19 @@ ttb.addEventListener("click", () => {
 utl.addEventListener("click", () => {
     window.open("https://onesearch.library.utoronto.ca/", "_blank");
 });
+
+mapboxgl.accessToken = '...'; // Add default public map token from your Mapbox account
+
+const map = new mapboxgl.Map({
+    container: 'campus-buildings', // map container ID
+    style: 'mapbox://styles/kellykelly7/cm71hqor100tx01s18p9x503i', // style URL
+    center: [-79.3908, 43.6593], // starting position [lng, lat]
+    zoom: 14.5, // starting zoom level
+});
+
+map.on('load', () => {
+    map.addSource('campus-buildings', {
+        type: 'geojson',
+        data: '...' // Your URL to your buildings.geojson file
+        });
+});
