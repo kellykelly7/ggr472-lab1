@@ -49,6 +49,7 @@ const map = new mapboxgl.Map({
 map.on('load', () => {
     map.addSource('campus-buildings', {
         type: 'geojson',
-        data: '...' // Your URL to your buildings.geojson file
+        // link to my geojson file for campus buildings
+        data: 'https://github.com/kellykelly7/ggr472-lab1/blob/main/campusbuildings.geojson' 
         });
 });
